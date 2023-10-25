@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* obj Section */
+.obj-header {
+	border-top-width: 20px;
+	padding-top: 150px;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #fafafa;
+}
+
+.wrapper h1 {
+	font-size: 3em;
+	margin: 200px 20px;
+	text-align: center;
+	font-weight: 500;
+}
+
+.content-box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 1500px;
+	margin-top: 20px;
+	padding: 100px;
+}
+
+.card {
+	height: 300px;
+	width: 300px;
+	padding: 35px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 10px 4px;
+	box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+}
+
+.card i {
+	margin: 15px;
+	color: #ff5724;
+}
+
+.card h2 {
+	margin-bottom: 12px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.card p {
+	color: #6c757d;
+	text-align: center;
+}
+
+.card:hover i,
+.card:hover p {
+	color: #fff;
+}
+
+
+.card:hover h2 {
+	font-weight: 600;
+	color: #f2f2f2;
+}
+
+.card:nth-child(1):hover {
+	background: linear-gradient(45deg,
+			rgba(255, 28, 8, 0.7) 0%,
+			rgba(255, 28, 8, 0.7) 100%),
+		url(images/art1.jpg);
+	background-size: cover;
+}
+
+.card:nth-child(2):hover {
+	background: linear-gradient(45deg,
+			rgba(255, 28, 8, 0.7) 0%,
+			rgba(255, 28, 8, 0.7) 100%),
+		url(images/art2.jpg);
+	background-size: cover;
+}
+
+.card:nth-child(3):hover {
+	background: linear-gradient(45deg,
+			rgba(255, 28, 8, 0.7) 0%,
+			rgba(255, 28, 8, 0.7) 100%),
+		url(images/art1.jpg);
+	background-size: cover;
+}
+
+.o-photo {
+	width: 100px;
+	height: 100px;
+}
+
+.content-box {
+	margin-top: -180px;
+}
+
+/* End obj Section */

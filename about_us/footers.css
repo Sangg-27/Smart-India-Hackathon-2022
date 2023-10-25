@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.footer {
+    margin-top: 150px;
+    width: 105%;
+    padding: 100px 15%;
+    background-color: #333;
+    color: #efefef;
+    display: flex;
+}
+
+.footer h4 {
+    color: rgb(211, 49, 49);
+}
+
+@media(max-width: 700px) {
+    .footer {
+        flex-direction: column;
+    }
+}

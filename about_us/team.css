@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* team section */
+#projects .projects {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px 2px;
+}
+
+#projects .projects-header h1 {
+	margin-bottom: 50px;
+}
+
+#projects .all-projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#projects .project-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 40px auto;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+#projects .project-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
+}
+
+#projects .project-info h1 {
+	font-size: 3rem;
+	font-weight: 500;
+}
+
+#projects .project-info h2 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-top: 20px;
+}
+
+#projects .project-info p {
+	color: white;
+	font-size: 1.5rem;
+	padding-top: 2%;
+	padding: 4px;
+	align-items: center;
+}
+
+#projects .project-img {
+	flex-basis: 50%;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+
+#projects .project-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(#fff);
+	opacity: 0.7;
+}
+
+#projects .project-img img {
+	transition: 0.3s ease transform;
+}
+
+#projects .project-item:hover .project-img img {
+	transform: scale(1.1);
+}
+
+#projects projects container {
+	min-height: 70vh;
+}
+
+.project-img {
+	height: 600px;
+	width: 400px;
+}
+
+/* End team section */

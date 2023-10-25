@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+/* Keyframes */
+@media(max-width: 991px) {
+	.wrapper {
+		padding: 25px;
+	}
+
+	.wrapper h1 {
+		font-size: 2.5em;
+		font-weight: 600;
+	}
+
+	.content-box {
+		flex: column;
+		width: 100%;
+	}
+
+	.o-card {
+		min-width: 300px;
+		margin: 10px auto;
+	}
+}
+
+@keyframes hamburger_puls {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+}
+
+@keyframes text_reveal_box {
+	50% {
+		width: 100%;
+		left: 0;
+	}
+
+	100% {
+		width: 0;
+		left: 100%;
+	}
+}
+
+@keyframes text_reveal {
+	100% {
+		color: white;
+	}
+}
+
+@keyframes text_reveal_name {
+	100% {
+		color: crimson;
+		font-weight: 500;
+	}
+}
+
+/* End Keyframes */
+
+/* Media Query For Tablet */
+@media only screen and (min-width: 768px) {
+	.cta {
+		font-size: 2.5rem;
+		padding: 20px 60px;
+	}
+
+	h1.section-title {
+		font-size: 6rem;
+	}
+
+	/* Hero */
+	#hero h1 {
+		font-size: 7rem;
+	}
+
+	/* End Hero */
+
+	/* Services Section */
+	#services .service-bottom .service-item {
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
+
+	/* End Services Section */
+
+	/* Project */
+	#projects .project-item {
+		flex-direction: row;
+	}
+
+	#projects .project-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+
+	#projects .project-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+
+	#projects .all-projects .project-info {
+		height: 100%;
+	}
+
+	#projects .all-projects .project-img {
+		height: 100%;
+	}
+
+	/* End Project */
+
+	/* End Media Query For Tablet */
+
+	/* Media Query For Desktop */
+	@media only screen and (min-width: 1200px) {
+
+		/* header */
+		#header .hamburger {
+			display: none;
+		}
+
+		#header .nav-list ul {
+			position: initial;
+			display: block;
+			height: auto;
+			width: fit-content;
+			background-color: transparent;
+		}
+
+		#header .nav-list ul li {
+			display: inline-block;
+		}
+
+		#header .nav-list ul li a {
+			font-size: 1.8rem;
+		}
+
+		#header .nav-list ul a:after {
+			display: none;
+		}
+
+		/* End header */
+
+		#services .service-bottom .service-item {
+			flex-basis: 22%;
+			margin: 1.5%;
+		}
+	}
+}
+
+/* End  Media Query For Desktop */
